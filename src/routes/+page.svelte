@@ -15,19 +15,19 @@
 		> using only 2D Y-axis transformations, no global body styles, no misleading clutter, and no JavaScript
 		at all.
 	</p>
+	<p class="content">
+		Side effect: preceding paragraphs must define a non-transparent background, otherwise the
+		decoration will shine through. <b>Scaling:</b> this setup will upscale your content, possibly breaking
+		pixel-perfect designs!
+	</p>
 </div>
-
-<p class="content">
-	Side effect: preceding paragraphs must define a non-transparent background, otherwise the
-	decoration will shine through. <b>Scaling:</b> this setup will upscale your content, possibly breaking
-	pixel-perfect designs!
-</p>
 
 <ParallaxGroup>
 	<ParallaxLayer>
 		<div class="card">
 			<h1>Card 1</h1>
 			<p>Slide section with cards over a perspective background</p>
+			<button>BUTTON</button>
 		</div>
 
 		<div class="card">
@@ -86,6 +86,11 @@
 		background-color: white;
 		margin: 0;
 		padding: 1rem;
+	}
+
+	.header {
+		position: relative;
+		z-index: 1;
 	}
 
 	/* decorative styles unrelated to the parallax effect: */

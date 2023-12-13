@@ -6,7 +6,6 @@
 	/* container around parallax layers */
 	.parallax__group {
 		position: relative;
-		z-index: -1;
 		transform-origin: center top;
 		transform: scaleY(calc(1 - var(--parallax-scale)));
 		margin-top: calc(
